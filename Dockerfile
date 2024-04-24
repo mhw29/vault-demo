@@ -1,6 +1,8 @@
 # Use a base image with the desired OS and version
 FROM ubuntu:latest
 
+ENV VAULT_ADDR='http://127.0.0.1:8200'
+
 # Install required dependencies
 RUN apt-get update && apt-get install -y \
     curl \
